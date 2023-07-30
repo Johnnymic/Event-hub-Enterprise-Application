@@ -21,6 +21,7 @@ public class AccountController {
     private final AccountService accountService;
     @GetMapping("/getName")
     @CrossOrigin(origins = "http://localhost:5173")
+
     public ResponseEntity<APIResponse<?>> getAccountName(@RequestParam String bankName,
                                             @RequestParam String accountNumber) {
         System.out.println("jj");
